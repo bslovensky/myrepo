@@ -11,7 +11,7 @@ navbar:
     - text: "Resume"
       href: Resume_bcs425.html
     - text: "Projects"
-    menu:
+      menu:
       - text: "RSquared"
         href: RSquared.html
       - text: "Machine Learning"
