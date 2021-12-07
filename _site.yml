@@ -13,9 +13,10 @@ navbar:
     - text: "Projects"
     menu:
       - text: "RSquared"
-        href:
+        href: RSquared.html
       - text: "Machine Learning"
-        href:
+        href: ML.html
       - text: "Final Project"
+        href: FinalProject.html
 
 output: distill::distill_article
