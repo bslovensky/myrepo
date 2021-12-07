@@ -1,0 +1,21 @@
+---
+title: "Brandon Slovensky"
+image: "brandon.jpg"
+links:
+  - label: LinkedIn
+    url: "https://linkedin.com/"
+  - label: Twitter
+    url: "https://twitter.com/"
+  - label: GitHub
+    url: "https://github.com/bslovensky"
+  - label: Email
+    url: "mailto:slovenskyb@gmail.com"
+output:
+  postcards::trestles
+site: distill::distill_website
+---
+ 
+I am a classically trained graduate accounting student living in the Birmingham Area. 
+Currently I work at Otelco and Sam's Club. 
+I love talking about baseball, 
+college football, and TV shows.

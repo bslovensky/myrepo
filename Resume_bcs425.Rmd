@@ -1,0 +1,100 @@
+---
+title: "Resume"
+author: "Brandon Slovensky"
+date: "8/26/2021"
+output: distill::distill_article
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+<center>
+# **Brandon Slovensky**
+
+Trussville, AL\| 205-718-1831\| [slovenskyb\@gmail.com](mailto:slovenskyb@gmail.com){.email}
+</center>
+
+----------------------------
+
+## **Education**
+
+### **Mississippi State University**
+
+Bachelor of Accountancy, Richard Adkerson School of Accounting, May 2020
+
+-   GPA: **3.73/4.00**
+
+## **Honors**
+
+-   Benjamin Head Memorial Scholarship recipient (**Fall 2019 -- Spring 2020**)
+
+-   President's Scholar (**Fall 2016, Spring 2017, Fall 2017, Spring 2018**)
+
+-   Dean's Scholar (**Spring 2019**)
+
+-   Beta Gamma Sigma member (**2017-Present**)
+
+## **Skills**
+
+-   Advanced Proficiency in Excel
+
+-   Very effective written and verbal communication
+
+-   Problem Solver
+
+## **Work Experience**
+
+### **Otelco --- Oneonta, AL, August 2021 -- Present**
+
+#### **Accounting Intern**
+
+-   Entered in asset information using Great Plains.
+
+-   Submitted time sheets weekly with GP.
+
+-   Verified accuracy of data in Excel spreadsheets.
+
+-   Cross referenced tag renewal info from PDF to VIN \#s in Excel spreadsheet.
+
+### **Sam's Club --- Trussville, AL, August 2020 -- Present**
+
+#### **Cart Attendant**
+
+-   Built good communications skills
+
+-   Developed good teamwork.
+
+-   Ensured carts were sanitized.
+
+-   Involved in the closing procedures which involved high attention to detail.
+
+-   Came in on off days when needed
+
+### **Mississippi State --- Mississippi State, MS, Fall 2019 -- Spring 2020**
+
+#### **Athletic Academic Tutor**
+
+-   Tutored multiple students per semester in either Financial Accounting or Managerial Accounting
+
+-   Used effective verbal communication when tutoring
+
+-   Ensured that student athletes completed homework
+
+-   Made sure students were engaged in learning process
+
+-   Complied with the NCAA's rules
+
+-   Used Excel to fill out timesheets
+
+### **Universal Pro - Birmingham, AL, Summer 2019**
+
+#### **Physical Labor**
+
+-   Trained other employees in how to read order sheets and operate blender
+
+-   Transformed raw materials into finished goods
+
+-   Assisted in closing the store at end of day
+
+-   Gathered orders for customers

@@ -1,0 +1,16 @@
+name: "."
+title: "bslovensky"
+theme: postcards.css
+description: |
+  Brandon Slovensky
+output_dir: "docs"
+navbar:
+  right:
+    - text: "Home"
+      href: index.html
+    - text: "Resume"
+      href: Resume_bcs425.html
+    - text: "Blog"      # add
+      href: blog.html   # add
+
+output: distill::distill_article
