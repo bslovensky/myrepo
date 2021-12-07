@@ -38,7 +38,7 @@
               headroom.init();
               if(window.location.hash)
                 headroom.unpin();
-              $(header).addClass('headroom--transition');
+              (header).addClass('headroom--transition');
 
               // offset scroll location for banner on hash change
               // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
@@ -475,7 +475,7 @@
                         : '';
                       var html = `
                         <div class="search-item">
-                          <h3>{suggestion.title}</h3>
+                          <h3>${suggestion.title}</h3>
                           <div class="search-item-description">
                             {suggestion.description || ''}
                           </div>
