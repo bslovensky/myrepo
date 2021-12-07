@@ -10,7 +10,7 @@ navbar:
       href: index.html
     - text: "Resume"
       href: Resume_bcs425.html
-    - text: "Blog"      # add
-      href: blog.html   # add
+    - text: "Blog"     
+      href: blog.html   
 
 output: distill::distill_article
