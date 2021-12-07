@@ -16,6 +16,5 @@ site: distill::distill_website
 ---
  
 I am a classically trained graduate accounting student living in the Birmingham Area. 
-Currently I work at Otelco and Sam's Club. 
-I love talking about baseball, 
-college football, and TV shows.
+Currently, I work at Otelco and Sam's Club.So, that means that I basically have no free time. 
+In my spare time, I enjoy watching college football, college baseball, and shows such as Seinfeld and King of the Hill.

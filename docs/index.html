@@ -38,7 +38,7 @@
               headroom.init();
               if(window.location.hash)
                 headroom.unpin();
-              (header).addClass('headroom--transition');
+              $(header).addClass('headroom--transition');
 
               // offset scroll location for banner on hash change
               // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
@@ -477,10 +477,10 @@
                         <div class="search-item">
                           <h3>${suggestion.title}</h3>
                           <div class="search-item-description">
-                            {suggestion.description || ''}
+                            ${suggestion.description || ''}
                           </div>
                           <div class="search-item-preview">
-                            {img}
+                            ${img}
                           </div>
                         </div>
                       `;
@@ -492,7 +492,7 @@
                 });
                 // remove inline display style on autocompleter (we want to
                 // manage responsive display via css)
-                ('.algolia-autocomplete').css("display", "");
+                $('.algolia-autocomplete').css("display", "");
               })
               .catch(function(error) {
                 console.log(error);
