@@ -10,7 +10,12 @@ navbar:
       href: index.html
     - text: "Resume"
       href: Resume_bcs425.html
-    - text: "Blog"     
-      href: blog.html   
+    - text: "Projects"
+    menu:
+      - text: "RSquared"
+        href:
+      - text: "Machine Learning"
+        href:
+      - text: "Final Project"
 
 output: distill::distill_article
