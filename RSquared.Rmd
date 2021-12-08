@@ -9,3 +9,22 @@ output: html_document
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
+### The RSquared problem that I chose to illustrate was that it does not measure goodness of and can be arbitrarily low when the model is correct. This interested me because it renders everything learned about RSquared in business stats obsolete. This makes the problem a big issue because there are better ways of measuring goodness of fit that are not being taught to students.
+
+```{r goodness of fit}
+r2.0 <- function(sig){
+  # our predictor
+  x <- seq(1,10,length.out = 100)   
+  # our response; a function of x plus some random noise
+  y <- 2 + 1.2*x + rnorm(100,0,sd = sig) 
+  # print the R-squared value
+  summary(lm(y ~ x))$r.squared          
+}
+
+sigmas <- seq(0.5,20,length.out = 20)
+ # apply our function to a series of sigma values
+rout <- sapply(sigmas, r2.0)            
+plot(rout ~ sigmas, type="b")
+```
+
+### As seen above, RSquared does not do well with increasing sigma despite the model being correct in every way. A possible solution to this problem would be to use predicted RSquared instead. By doing this, it will be able to gauge how well a model accounts for new observations and can also prevent overfitting. The only downside to this alternative is that it is not widely available. Excel and SPSS do not support it. You would have to use a work around just to use it in SPSS. It can be used in R with the DAAG package, however.
