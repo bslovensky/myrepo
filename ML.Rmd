@@ -7,5 +7,51 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(caret)
+library(tidyverse)
+```
+
+### The machine learning algorithm that I have chosen to demonstrate is k-nearest neighbors (k-nn). This algorithm finds the k nearest neighbors to a new occurance and uses the features of these particular neighbors to predict the new occurance's feature. The results could either be discrete or continuous. An example of a discrete feature would be a class label. If it is discrete, the prediction would be classification. An example of continuous feature is a numeric value. With a continuous feature, the prediction used would be regression. In the case of these particular code chunks, when a new point is added to the graph, the algorithm identifies the k nearest neighbors (in this case, 5). With this, a statistical evaluation is performed for the relevant features. It is then used to predict the new data point. This algorithm could be applied to accounting in analyzing bank credit risk and predicting bankruptcy.
+
+```{r graph}
+set.seed(1)
+
+indxTrain <- createDataPartition(y = iris[, names(iris) == "Species"], p = 0.7, list = F)
+
+train <- iris[indxTrain,]
+
+train1<-train%>%
+  filter(Species=="setosa")%>% 
+  sample_n(10)
+train2<-train%>%
+  filter(Species=="versicolor")%>% 
+  sample_n(10)
+train3<-train%>%
+  filter(Species=="virginica")%>% 
+  sample_n(10)
+graph_train<-rbind(train1,train2,train3)
+
+test <- iris[-indxTrain,]
+
+graph_test<-test%>%
+  sample_n(1)
+
+ggplot(data=graph_train,mapping = aes(x=Petal.Length,y=Petal.Width,color=Species))+geom_point(alpha=0.5) + 
+   geom_point(data=graph_test, color="darkred", size=4) + theme(legend.title = element_blank())+ggtitle("Which are the closest 5 to the red dot?")+xlim(4.5,6)+ylim(1.5,2.5)+
+  theme(plot.title = element_text(hjust=0.5, size=10, face='bold'))
+```
+
+```{r knn}
+knnModel <- train(Species ~.,
+                  data = graph_train,
+                  method = 'knn',
+                  preProcess = c("center","scale"),
+                  tuneGrid=data.frame(k=5))
+
+predictedclass<-predict(knnModel,graph_test)
+
+predictedclass
+
+knnModel$finalModel
 ```
 
