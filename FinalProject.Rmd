@@ -7,5 +7,30 @@ output: html_document
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(caret)
+```
+
+```{r}
+set.seed(1)
+
+trainIndex <- createDataPartition(zoo$animal_name, p = .6, list = FALSE, times = 1)
+
+SVMTrain <- LV_data[ trainIndex,]
+SVMTest  <- LV_data[-trainIndex,]
+
+zoo_SVM <- train(
+  form = factor(hair) ~ .,
+  data = SVMTrain,
+  trControl = trainControl(method = "cv", number = 10, classProbs = TRUE),
+  method = "svmLinear",
+  preProcess = c("center", "scale"),
+  tuneLength = 10)
+
+zoo_SVM
+```
+
+```{r}
+
 ```
 
