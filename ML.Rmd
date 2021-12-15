@@ -2,7 +2,7 @@
 title: "Machine Learning"
 author: "Brandon Slovensky"
 date: "12/7/2021"
-output: html_document
+output: distill::distill_article
 ---
 
 ```{r setup, include=FALSE}
