@@ -1,7 +1,7 @@
 ---
 title: "Machine Learning"
 author: "Brandon Slovensky"
-date: "12/7/2021"
+date: "`r Sys.Date()`"
 output: distill::distill_article
 ---
 
